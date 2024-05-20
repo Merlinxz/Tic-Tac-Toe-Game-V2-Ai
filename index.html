@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Tic-Tac-Toe online. A simple and fun game for two players.">
+    <meta name="keywords" content="Tic-Tac-Toe, game, multiplayer, fun">
+    <meta name="author" content="Your Name">
+
+    <!-- Favicon link -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Tic-Tac-Toe Game</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="game-container">
+            <p id="turnIndicator" class="text-center mb-3"></p>
+            <div class="board" id="board"></div>
+            <h5 id="statusBar" class="text-center mb-2">Mode: Play with Friend</h5>
+            <div class="text-center mt-3">
+                <button class="btn btn-primary" id="resetButton">
+                    <i class="fas fa-redo"></i> Reset Game
+                </button>
+                <button class="btn btn-secondary" id="toggleModeButton">
+                    <i class="fas fa-robot"></i> Play with AI
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript libraries with integrity attributes for enhanced security -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="textai.js"></script>
+    <script src="tictactoe.js"></script>
+</body>
+
+</html>
